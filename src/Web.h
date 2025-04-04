@@ -19,7 +19,6 @@ extern AsyncWebServer *server;
 // Forward declarations
 void webSetup(void);
 void webLoop(void);
-ControlColor getColorForName(const char* colorName);
 
 // API endpoints
 void handleStatusRequest(AsyncWebServerRequest *request);

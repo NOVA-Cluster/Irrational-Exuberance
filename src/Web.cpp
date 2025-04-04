@@ -435,13 +435,6 @@ void webSetup()
     resetConfigSwitch = ESPUI.addControl(ControlType::Switcher, "Reset Configurations", "0", ControlColor::Sunflower, resetTab, &switchExample);
     resetRebootSwitch = ESPUI.addControl(ControlType::Switcher, "Reboot", "0", ControlColor::Sunflower, resetTab, &switchExample);
 
-    // Enable this option if you want sliders to be continuous (update during move) and not discrete (update on stop)
-    // ESPUI.sliderContinuous = true;
-
-    // Optionally use HTTP BasicAuth
-    // ESPUI.server->addHandler(new CaptiveRequestHandler()).setFilter(ON_AP_FILTER); // only when requested from AP
-    // ESPUI->server->begin();
-
     ESPUI.captivePortal = false; // Disable captive portal
 
     // ESPUI.list(); // List all files on LittleFS, for info
@@ -450,28 +443,6 @@ void webSetup()
     // API endpoints have been removed
     // Create API mutex (kept for compatibility with handler functions)
     apiMutex = xSemaphoreCreateMutex();
-}
-
-ControlColor getColorForName(const char *colorName)
-{
-    if (!colorName)
-        return ControlColor::Dark;
-
-    String color = String(colorName);
-    color.toLowerCase();
-
-    if (color == "red")
-        return ControlColor::Alizarin; // Red
-    if (color == "green")
-        return ControlColor::Emerald; // Green
-    if (color == "blue")
-        return ControlColor::Peterriver; // Blue
-    if (color == "yellow")
-        return ControlColor::Sunflower; // Yellow
-    if (color == "white")
-        return ControlColor::Wetasphalt; // White represented as gray
-
-    return ControlColor::Dark;
 }
 
 void webLoop()

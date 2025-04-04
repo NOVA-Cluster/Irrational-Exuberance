@@ -136,12 +136,12 @@ void setup() {
     Serial.println("new LightUtils");
     lightUtils = new LightUtils();
 
-    String apName = "NovaCore_" + getLastFourOfMac();
+    String apName = "IE_" + getLastFourOfMac();
 
     // Set WiFi mode to WIFI_AP_STA for simultaneous AP and STA mode
     WiFi.mode(WIFI_AP_STA);
 
-    WiFi.softAP(apName.c_str(), "scubadandy");
+    WiFi.softAP(apName.c_str(), "dragonsofeden");
     WiFi.setSleep(false); // Disable power saving on the wifi interface.
 
     WiFi.onEvent(WiFiEvent);
