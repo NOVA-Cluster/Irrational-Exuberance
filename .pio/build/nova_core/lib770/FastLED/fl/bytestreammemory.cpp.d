@@ -1,0 +1,22 @@
+.pio/build/nova_core/lib770/FastLED/fl/bytestreammemory.cpp.o: \
+ .pio/libdeps/nova_core/FastLED/src/fl/bytestreammemory.cpp \
+ .pio/libdeps/nova_core/FastLED/src/fl/bytestreammemory.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/namespace.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/ptr.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/scoped_ptr.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/template_magic.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/bytestream.h \
+ .pio/libdeps/nova_core/FastLED/src/crgb.h \
+ .pio/libdeps/nova_core/FastLED/src/chsv.h \
+ .pio/libdeps/nova_core/FastLED/src/color.h \
+ .pio/libdeps/nova_core/FastLED/src/lib8tion/types.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/force_inline.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/circular_buffer.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/math_macros.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/warn.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/dbg.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/strstream.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/str.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/vector.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/inplacenew.h \
+ .pio/libdeps/nova_core/FastLED/src/fl/insert_result.h
