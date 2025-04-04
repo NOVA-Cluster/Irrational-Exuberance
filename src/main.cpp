@@ -117,9 +117,6 @@ void setup() {
     Serial.println("Setting up Serial2");
     Serial2.begin(921600, SERIAL_8N1, UART2_RX, UART2_TX);
 
-    Serial.println("Pin Directions");
-    pinMode(ENABLE_DEVICE_PIN, INPUT_PULLDOWN);
-
     randomSeed(esp_random()); // Seed the random number generator with more entropy
 
     Serial.println("Set clock of I2C interface to 0.4mhz");
